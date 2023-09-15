@@ -1,32 +1,30 @@
-<!--de body voor de inhoud van de pagina-->
-<!DOCTYPE html> <!--dit is de homepage van mijn site-->
-<html> <!--dit is het html-element-->
-    <head>   
-       
-        <title>informatica</title>
-        <link rel="stylesheet" type="text/css" href="opmaak.css">
-        <meta charset="utf-8">
-    </head>
-    <body> 
-        
- <!--de pagina's zijn nu aan elkaar gelinkt in het html en er is een menu gemaakt met <ul>-->
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="binairstelsel.html">uitleg Binair stelsel</a></li>
-            <li><a href="kleurmodellen.html">uitleg kleurmodellen</a></li>
-            <li><a href="opslag.html">uitleg over opslag</a></li>
-        </ul>
-        
-        
-<!--h3 geeft eeb stukje tekst weer-->
-       <h3>op deze site krijgt u uitleg over kleurmodellen</h3>
-        
-<!--er word tekst gegeven met behulp van een paragraaf-->
-       <p>Een bit heeft de waarde 0 of 1. Zo kunnen per kleur 2 ^ 8 = 256 gradaties van die kleur gemaakt worden,
-        Omdat de kleur van een pixel is opgebouwd uit rood, groen en blauw wordt 
-        het totaal aantal mogelijke kleuren per pixel 256 x 256 x 256 = 16,7 miljoen kleuren.</p>
-        
- <!--img src geeft een fotokleurmoddellen aan-->
-       <img src="Kleur.jpg" alt="kleurmodellen" width="400" height="400">
-    </body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binair stelsel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="top-level-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="binairstelsel.html">Binair Stelsel</a></li>
+                <li><a href="bestandsformaten.html">Bestandsformaten</a></li>
+                <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
+                <li><a href="john.html">VonNeumann-Architectuur</a></li>
+                <li><a href="geluidsgolven.html">Geluidsgolven</a></li>
+                <li>
+                    <a href="drielagenmodel.html">Drie-Lagen-Model</a>
+                    <ul class="second-level-menu">
+                        <li><a href="fysiekelaag.html">Fysieke-Laag</a></li>
+                        <li><a href="logischelaag.html">Logische-Laag</a></li>
+                        <li><a href="toepassingslaag.html">Toepassingen-Laag</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
