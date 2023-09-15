@@ -18,4 +18,13 @@ li a:hover {
   background-color: rgb(147, 238, 245);
   color: rgba(248, 10, 141, 0.904);
 
- 
+}
+
+/*elk kopje heeft de eigenschappen font-family=lettertype, achtergrondkleur, letterkleur en dikte*/
+.kopje{
+  font-family: 'Times New Roman', Times, serif;
+  background-color: brown;
+  color: black;
+  padding: 10px;
+
+}
