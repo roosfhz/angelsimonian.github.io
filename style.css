@@ -1,91 +1,93 @@
-/* Third Level Menu */
-.third-level-menu {
-  position: absolute;
-  top: 0;
-  right: -150px;
-  width: 150px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: none;
+/* Menu Opmaak */
+.third-level-menu
+{
+    position: absolute;
+    top: 0;
+    right: -150px;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    background: #FFAC33; /* Oranje achtergrond */
+    border: 1px solid #FFAC33; /* Oranje rand */
+    border-radius: 5px; /* Afgeronde randen */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Schaduw */
 }
 
-.third-level-menu > li {
-  height: 30px;
-  background: #FFD6D6; /* Pastel Pink */
+.third-level-menu > li
+{
+    height: 30px;
+    background: #FFD699; /* Oranje achtergrond */
+    border-bottom: 1px solid #FFAC33; /* Oranje rand aan de onderkant */
+}
+.third-level-menu > li:hover { background: #FFAC33; /* Oranje achtergrond bij hover */ }
+
+.second-level-menu
+{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    background: #FFAC33; /* Oranje achtergrond */
+    border: 1px solid #FFAC33; /* Oranje rand */
+    border-radius: 5px; /* Afgeronde randen */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Schaduw */
 }
 
-.third-level-menu > li:hover {
-  background: #FFB3B3; /* Lighter Pink on Hover */
+.second-level-menu > li
+{
+    position: relative;
+    height: 30px;
+    background: #FFD699; /* Oranje achtergrond */
+    border-bottom: 1px solid #FFAC33; /* Oranje rand aan de onderkant */
+}
+.second-level-menu > li:hover { background: #FFAC33; /* Oranje achtergrond bij hover */ }
+
+.top-level-menu
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* Second Level Menu */
-.second-level-menu {
-  position: absolute;
-  top: 30px;
-  left: 0;
-  width: 150px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: none;
+.top-level-menu > li
+{
+    position: relative;
+    float: left;
+    height: 30px;
+    width: 50%;
+    background: #FFAC33; /* Oranje achtergrond */
+    border-right: 1px solid #FFD699; /* Lichtoranje rand aan de rechterkant */
+}
+.top-level-menu > li:hover { background: #FFD699; /* Lichtoranje achtergrond bij hover */ }
+
+.top-level-menu li:hover > ul
+{
+    /* Bij hover, het volgende niveau menu weergeven */
+    display: inline;
 }
 
-.second-level-menu > li {
-  position: relative;
-  height: 30px;
-  background: #FFB3E6; /* Pastel Purple */
+/* Menu Link Opmaak */
+.top-level-menu a
+{
+    font: bold 14px Arial, Helvetica, sans-serif;
+    color: #FFD699; /* Lichtoranje tekstkleur */
+    text-decoration: none;
+    padding: 0 0 0 10px;
+    display: block;
+    line-height: 30px;
+}
+.top-level-menu a:hover { color: #FFAC33; /* Oranje tekstkleur bij hover */ }
+
+/* Grote Titel Opmaak */
+.grote-titel {
+    font-size: 32px;
+    font-weight: bold;
+    color: #FFAC33; /* Oranje tekstkleur */
 }
 
-.second-level-menu > li:hover {
-  background: #FF99D9; /* Lighter Purple on Hover */
-}
-
-/* Top Level Menu */
-.top-level-menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.top-level-menu > li {
-  position: relative;
-  float: left;
-  height: 30px;
-  width: 100%;
-  background: #FFC3A0; /* Pastel Orange */
-}
-
-.top-level-menu > li:hover {
-  background: #FFA080; /* Lighter Orange on Hover */
-}
-
-/* Menu Link Styles */
-.top-level-menu a {
-  font: bold 16px 'Arial', sans-serif; /* Larger and sans-serif font */
-  color: #333333; /* Darker text color */
-  text-decoration: none;
-  padding: 0 0 0 10px;
-  display: block;
-  line-height: 30px;
-}
-
-.top-level-menu a:hover {
-  color: #FF6B6B; /* Pink on Hover */
-}
-
-/* Image Styles */
-img {
-  width: 350px;
-  height: 200px;
-  float: right;
-  margin-left: 20px;
-}
-
-/* Header Styles */
-.kopje {
-  font-family: 'Pacifico', cursive; /* A cute, handwritten font */
-  background-color: #FFECB3; /* Pastel Yellow */
-  color: #E57373; /* Lighter Red Text */
-  padding: 10px;
-}
